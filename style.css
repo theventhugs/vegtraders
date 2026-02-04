@@ -1,0 +1,316 @@
+/* =========================================
+   1. THEME & BASE STYLES
+   ========================================= */
+body[data-theme="green"] {
+  --primary: #3b7d5a;
+  --secondary: #eaf5ef;
+  --background: #f4faf7;
+  --card-bg: #fff;
+  --text-dark: #1f2d27;
+  --text-light: #6b7f75;
+}
+
+* { box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+body { margin: 0; background: var(--background); color: var(--text-dark); }
+/* Class to lock body scrolling via JS */
+body.no-scroll {
+  overflow: hidden;
+}
+
+
+/* =========================================
+   2. HEADER & LOGO
+   ========================================= */
+header {
+  background: var(--card-bg);
+  height: 80px; /* Fixed height for stability */
+  padding: 0 2rem;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky; 
+  top: 0; 
+  z-index: 100;
+}
+
+.brand { 
+  display: flex; 
+  gap: 1rem; 
+  align-items: center;
+  height: 100%; 
+}
+
+.brand h1 {
+  /* Default Desktop Size */
+  font-size: 1.5rem; 
+  margin: 0;
+}
+
+/* STRICT LOGO SIZING */
+.logo {
+  width: 60px; 
+  height: 60px; 
+  border-radius: 50%;
+  overflow: hidden; 
+  flex-shrink: 0;   
+  display: flex; align-items: center; justify-content: center;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* =========================================
+   3. HEADER SEARCH BAR
+   ========================================= */
+.header-search { display: flex; align-items: center; gap: 10px; }
+
+.header-input {
+  width: 0;
+  opacity: 0;
+  padding: 0;
+  border: 1px solid transparent;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+/* Expanded State */
+.header-input.active {
+  width: 200px;
+  opacity: 1;
+  padding: 0.5rem 1rem;
+  border-color: #ccc;
+}
+
+.search-icon {
+  border: none; background: var(--secondary);
+  width: 40px; height: 40px; border-radius: 50%;
+  cursor: pointer; font-size: 16px; transition: 0.2s;
+}
+
+@media (hover: hover) {
+  .search-icon:hover { background: #dcece6; }
+}
+
+
+/* =========================================
+   4. HERO SECTION
+   ========================================= */
+.hero { text-align: center; padding: 3rem 1rem; }
+.hero h2 { margin-bottom: 0.5rem; color: var(--primary); }
+
+.hero-input {
+  margin-top: 1.5rem;
+  padding: 0.8rem 1.2rem;
+  width: 100%; max-width: 400px;
+  border-radius: 25px; border: 1px solid #ccc;
+  outline: none; font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+
+/* =========================================
+   5. PRODUCT CARDS & GRID
+   ========================================= */
+.products {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1200px; margin: 0 auto;
+}
+
+.product-card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.04);
+  transition: transform 0.2s;
+  display: flex; flex-direction: column;
+}
+
+@media (hover: hover) {
+  .product-card:hover { transform: translateY(-5px); }
+}
+
+.product-info h3 { margin: 0.5rem 0; font-size: 1.1rem; }
+.weight { color: var(--text-light); font-size: 0.9rem; margin-bottom: 0.5rem; }
+.price { color: var(--primary); font-weight: 700; font-size: 1.2rem; margin-bottom: 1rem; }
+
+.details-btn {
+  width: 100%; padding: 0.8rem; border-radius: 10px;
+  border: none; background: var(--secondary); color: var(--primary);
+  font-weight: 600; cursor: pointer; margin-top: auto;
+  transition: 0.2s;
+}
+
+@media (hover: hover) {
+  .details-btn:hover { background: var(--primary); color: #fff; }
+}
+
+
+/* =========================================
+   6. IMAGE SLIDER (AMAZON STYLE)
+   ========================================= */
+.image-slider {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Force Square */
+  background: #fff; 
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  border: 1px solid #f0f0f0; 
+  user-select: none; 
+  -webkit-user-select: none;
+  touch-action: pan-y;
+}
+
+.image-slider img {
+  width: 100%; 
+  height: 100%;
+  object-fit: contain; 
+  display: block;
+}
+
+/* Slider Navigation Arrows */
+.nav {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  border: none; 
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 35px; height: 35px; 
+  border-radius: 50%;
+  cursor: pointer; 
+  font-size: 18px;
+  color: #333; 
+  display: flex; align-items: center; justify-content: center;
+  transition: all 0.2s ease;
+  z-index: 10; 
+}
+
+@media (hover: hover) {
+  .nav:hover {
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transform: translateY(-50%) scale(1.1);
+  }
+}
+
+.nav.left { left: 10px; }
+.nav.right { right: 10px; }
+.nav.hidden { display: none; }
+
+
+/* =========================================
+   7. MODAL (POPUP)
+   ========================================= */
+.modal-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1000;
+  display: none; 
+  align-items: center; justify-content: center;
+  padding: 1rem;
+  backdrop-filter: blur(3px);
+}
+.modal-overlay.active { display: flex; }
+
+.modal-content {
+  background: white;
+  width: 100%; max-width: 500px;
+  padding: 2rem; border-radius: 20px;
+  position: relative;
+  animation: popIn 0.3s ease;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+/* Scrollable body if content is long */
+.modal-body-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+  
+  /* NEW: Prevents Pull-to-Refresh and Background Scroll Chaining */
+  overscroll-behavior: contain;
+}
+
+@keyframes popIn { from { transform: scale(0.9); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.close-modal { font-size: 28px; cursor: pointer; color: #888; }
+
+@media (hover: hover) {
+  .close-modal:hover { color: #000; }
+}
+
+/* Rich Content Styling (Amazon Look) */
+.modal-body-scroll {
+  max-height: 70vh;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.section-title {
+  font-size: 1.1rem; font-weight: 700;
+  color: #c45500; 
+  margin-top: 1.5rem; margin-bottom: 0.5rem;
+  border-bottom: 1px solid #eee; padding-bottom: 5px;
+}
+
+.feature-list { padding-left: 1.2rem; margin: 0; }
+.feature-list li { margin-bottom: 0.5rem; font-size: 0.95rem; line-height: 1.4; color: #333; }
+.feature-list b { color: #000; font-weight: 700; }
+
+.specs-table {
+  width: 100%; border-collapse: collapse; font-size: 0.9rem; margin-bottom: 1rem;
+}
+.specs-table tr { border-bottom: 1px solid #f0f0f0; }
+.specs-table th { text-align: left; padding: 8px 0; color: #555; font-weight: 700; width: 40%; vertical-align: top; }
+.specs-table td { padding: 8px 0; color: #333; vertical-align: top; }
+
+
+/* =========================================
+   8. FOOTER & CONTACT
+   ========================================= */
+.contact { margin: 4rem 2rem; padding: 2rem; background: #fff; border-radius: 20px; text-align: center; }
+footer { text-align: center; padding: 2rem; color: var(--text-light); font-size: 0.9rem; }
+
+
+/* =========================================
+   9. MOBILE OPTIMIZATIONS (MEDIA QUERY)
+   ========================================= */
+@media (max-width: 600px) {
+
+  /* A. Compact Header */
+  header { height: 60px; padding: 0 1rem; }
+  .brand { gap: 0.5rem; }
+  
+  /* B. Smaller Logo & Text */
+  .logo { width: 40px; height: 40px; }
+  .brand h1 { font-size: 1.1rem; white-space: nowrap; }
+
+  /* C. Search Overlay Fix */
+  .header-input.active {
+    position: absolute;
+    left: 1rem;    
+    right: 3.5rem; 
+    width: auto;   
+    top: 50%;
+    transform: translateY(-50%); 
+    height: 40px;
+    z-index: 99;   
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); 
+  }
+  
+  /* D. Reduce Padding */
+  .hero { padding: 2rem 1rem; }
+  .contact { margin: 2rem 1rem; padding: 1.5rem; }
+}
