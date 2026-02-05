@@ -197,6 +197,29 @@ const allProducts = [
     },
     images: ["images/product03_200ml(1).png", "images/product03_200ml(2).png"]
   },
+  {
+    name: "Home Guard Neo Toilet Cleaner 10X Power Clean 500ml 1Buy Get 1Free",
+    weight: "500 ml",
+    price: 10,
+    about: [
+      "<b>Powerful 10X Cleaning Formula:</b> Specially formulated to deliver deep and effective cleaning for toilet bowls by removing tough stains, limescale, dirt, and deposits.",
+      "<b>Hygienic and Germ-Free:</b> Helps eliminate germs and bacteria for a cleaner and more sanitary toilet surface.",
+      "<b>Fresh Fragrance:</b> Leaves behind a pleasant scent after cleaning to help neutralize bathroom odors.",
+      "<b>Easy to Use:</b> Just pour along the toilet bowl sides, let the powerful formula act, and scrub if needed for best results.",
+      "<b>Value Pack – Buy 1 Get 1 Free:</b> Comes as a 500 ml bottle with an additional free bottle, offering greater value and longer usage.",
+    ],
+    details: {
+      "Product": "Home Guard Neo Toilet Cleaner 10X Power Clean",
+      "Pack Size": "500ml + 500ml (Buy 1 Get 1 Free)",
+      "Net Quantity": "1000 ml",
+      "Usage": "Toilet Bowl Cleaning",
+      "Fragrance": "Fresh",
+      "Cleans": "Tough Stains, Limescale, Dirt, Germs",
+      "Application": "Pour & Clean Toilet Bowl",
+      "Germ Protection": "Yes"  
+    },
+    images: ["images/product03_500ml_BlueNeo(1).jpg", "images/product03_500ml_BlueNeo(2).jpg", "images/product03_500ml_BlueNeo(3).jpg"]
+  },
 
 // -----------------------------------------------------------------------------------------------------------------------------
 
@@ -249,6 +272,32 @@ const allProducts = [
       "Ideal For": "Small Babies"
     },
     images: ["images/product04_S_40(1).jpg", "images/product04_S_40(2).jpg", "images/product04_S_40(3).jpg", "images/product04_S_40(4).jpg", "images/product04_S_40(5).jpg", "images/product04_S_40(6).jpg", "images/product04_S_40(7).jpg", "images/product04_S_40(8).jpg", "images/product04_S_40(9).jpg"]
+  },
+  {
+    name: "Bum Suit Baby Pants Medium (pack of 72)",
+    weight: "Medium (M)",
+    price: 10,
+    about: [
+      "<b>Premium Comfort & Fit:</b> Designed with a soft, breathable material that’s gentle on your baby’s delicate skin and ensures comfortable all-day wear.",  
+      "<b>Active Leak Protection:</b> Features advanced 3D Leak Guard and elastic waistband for a snug fit that helps prevent leaks during movement and play.",  
+      "<b>Up to 12-Hour Absorption:</b> Gel Magnet Technology locks in wetness, providing long-lasting dryness and comfort throughout day and night.",  
+      "<b>Mosquito Protection Technology:</b> Integrated natural mosquito-repellent feature offers added protection while your baby plays or sleeps.",  
+      "<b>Suitable for Small Babies:</b> Sized Small (S) for babies approximately 4–8 kg, perfect for growing infants with active movements.",  
+      "<b>Available in Multiple Pack Sizes:</b> Offered in both 40-count and 78-count packs to meet your daily baby care needs and family usage.",
+    ],
+    details: {
+      "Product": "Bumsuit Baby Pants Medium (M)",
+      "Pack Sizes Available": "72 Count",
+      "Size": "Medium (M)",
+      "Compatible Baby Weight": "7-12 kg",
+      "Material": "Soft Breathable Fabric with Elastic Waistband",
+      "Leak Protection": "3D Leak Guard, Elastic Waistband",
+      "Absorption Duration": "Up to 12 Hours",
+      "Mosquito Protection": "Yes (Natural Mosquito-Repellent Technology)",
+      "Usage": "Baby Diapering",
+      "Ideal For": "Small Babies"
+    },
+    images: ["images/product04_M_72(1).jpg", "images/product04_M_72(2).jpg", "images/product04_S_40(3).jpg", "images/product04_S_40(4).jpg", "images/product04_S_40(5).jpg", "images/product04_S_40(6).jpg", "images/product04_S_40(7).jpg", "images/product04_S_40(8).jpg", "images/product04_S_40(9).jpg"]
   },
   {
     name: "Bum Suit Baby Pants Large (pack of 30)",
