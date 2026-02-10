@@ -5,7 +5,7 @@ const allProducts = [
   {
     name: "Enzo All In One Detergent Powder 5 kg",
     weight: "5 Kg",
-    price: 600,
+    price: 450,
     about: [
       "<b>All In One Cleaning Power:</b> This is the core promise of the product. It's formulated to provide a complete laundry solution, effectively handling multiple aspects of washing without the need for separate additives.",
       "<b>Superior Stain Removal:</b> Enzo All In One Detergent Powder is specifically formulated to tackle tough stains on various fabrics, including dirt, grease, oil, and food residues, ensuring a deep and thorough clean. Some sources mention a triple enzyme stain blaster formula for a spotless wash.",
@@ -29,7 +29,7 @@ const allProducts = [
   {
     name: "Enzo All In One Detergent Powder 1 kg",
     weight: "1 Kg",
-    price: 120,
+    price: 90,
     about: [
         "<b>All In One Cleaning Solution:</b> Designed to handle multiple aspects of laundry cleaning effectively, eliminating the need for additional additives.",
         "<b>Superior Stain Removal:</b> Specially formulated to remove stubborn stains such as dirt, grease, oil, and food residues, delivering a deep and thorough clean on various fabrics.",
@@ -81,92 +81,73 @@ const allProducts = [
 
   // PRODUCT 02
   {
-    name: "Glimmer Bright Lavender Soap 100 g (pack of 5)",
-    weight: "100 gm",
+    name: "Glimmer Rose Burst Soap 105 g (pack of 5)",
+    weight: "105 gm",
     price: 90,
     about: [
-      "<b>Calming Lavender Fragrance:</b> Enriched with a soothing lavender scent that leaves the skin feeling relaxed and pleasantly fragrant after every wash.",
-      "<b>Gentle Daily Cleansing:</b> Cleanses the skin effectively while remaining mild and suitable for everyday use.",
-      "<b>Soft & Smooth Skin:</b> Helps keep the skin soft, smooth, and refreshed with regular use.",
-      "<b>Suitable for Normal Skin:</b> Formulated for normal skin type, offering balanced cleansing and gentle care.",
-      "<b>Pack of 5 for Regular Use:</b> Supplied as a value pack of five 100 g soaps, ideal for family use and long-term convenience."
+      "<b>Delicate Rose Fragrance:</b> Infused with a gentle and refreshing rose aroma that leaves your skin smelling lovely and fresh after every wash.",  
+      "<b>Rich & Creamy Lather:</b> Produces a smooth, creamy foam that effectively cleanses dirt and impurities without stripping natural moisture from the skin.",  
+      "<b>Hydrating & Gentle:</b> Formulated to help maintain skin hydration and softness, keeping your skin feeling smooth and supple throughout the day.",  
+      "<b>Suitable for Daily Use:</b> Mild enough for everyday bathing, making it ideal for regular family use.",  
+      "<b>Value Pack of 5:</b> Comes in a convenient pack of five 105 g soaps, offering excellent value and long-lasting supply for home use.",
     ],
     details: {
-      "Packaging Size": "100 gm × 5 (500 gm)",
-      "Purpose": "For Regular Use",
-      "Skin Type": "Normal Skin",
-      "Brand": "GLIMMER",
-      "Shelf Life": "24 months",
-      "Fragrance": "Neutral",
-      "Ideal For": "Unisex"
+      "Product": "",
+      "Fragrance": "Rose",
+      "Net Quantity": "5 × 105 g",
+      "Pack Size": "Pack of 5",
+      "Usage": "Bathing & Cleansing",
+      "Skin Feel": "Hydrating & Gentle",
+      "Suitable For": "All Skin Types",
+      "Form": "Bar Soap"
     },
-    images: ["images/product02_100gm_BrightLavender(1).jpg", "images/product02_100gm_BrightLavender(2).jpg"]
+    images: ["images/product02_105gm_RoseBurst(0).jpg", "images/product02_105gm_RoseBurst(1).jpg", "images/product02_105gm_RoseBurst(2).jpg"]
   },
   {
-    name: "Glimmer Floral Burst Soap 100 g (pack of 5)",
-    weight: "100 gm",
+    name: "Glimmer Lime Zest Soap 105 g (pack of 5)",
+    weight: "105 gm",
     price: 90,
     about: [
-      "<b>Refreshing Floral Fragrance:</b> Infused with a pleasant floral burst aroma that leaves the skin feeling fresh and lightly scented after every wash.",
-      "<b>Gentle Daily Cleansing:</b> Effectively cleanses the skin while being mild enough for regular, everyday use.",
-      "<b>Soft & Smooth Skin:</b> Helps maintain soft, smooth, and refreshed skin with consistent use.",
-      "<b>Suitable for Normal Skin:</b> Specially formulated for normal skin type, providing balanced care and cleansing.",
-      "<b>Pack of 5 for Regular Use:</b> Comes in a convenient value pack of five 100 g soaps, ideal for family use and long-term needs."
+      "<b>Invigorating Lime Zest Fragrance:</b> Infused with a refreshing lime scent that awakens your senses and leaves your skin smelling fresh after every wash.",
+      "<b>Rich & Creamy Lather:</b> Produces a smooth, creamy foam that effectively removes dirt and impurities while being gentle on the skin.",
+      "<b>Hydrating & Nourishing:</b> Formulated to help maintain skin moisture and keep skin feeling soft, smooth, and refreshed throughout the day.",
+      "<b>Suitable for Daily Use:</b> Mild enough for everyday bathing, making it ideal for regular family use.",
+      "<b>Value Pack of 5:</b> Comes in a convenient pack of five 105 g soaps, offering excellent value and long-lasting supply for home use.",
     ],
     details: {
-      "Packaging Size": "100 gm × 5 (500 gm)",
-      "Purpose": "For Regular Use",
-      "Skin Type": "Normal Skin",
-      "Brand": "GLIMMER",
-      "Shelf Life": "24 months",
-      "Fragrance": "Neutral",
-      "Ideal For": "Unisex"
+      "Product": "Glimmer Lime Zest Soap",
+      "Fragrance": "Lime Zest",
+      "Net Quantity": "5 × 105 g",
+      "Pack Size": "Pack of 5",
+      "Usage": "Bathing & Cleansing",
+      "Skin Feel": "Hydrating & Nourishing",
+      "Suitable For": "All Skin Types",
+      "Form": "Bar Soap"
     },
-    images: ["images/product02_100gm_FloralBurst(1).jpg", "images/product02_100gm_FloralBurst(2).jpg"]
+    images: ["images/product02_105gm_LimeZest(0).jpg", "images/product02_105gm_LimeZest(2).jpg", "images/product02_105gm_LimeZest(1).jpg"]
   },
   {
-    name: "Glimmer Fresh Jasmine Soap 100 g (pack of 5)",
-    weight: "100 gm",
+    name: "Glimmer Jasmine Bloom Soap 105 g (pack of 5)",
+    weight: "105 gm",
     price: 90,
     about: [
-      "<b>Soothing Jasmine Fragrance:</b> Enriched with a gentle jasmine scent that leaves the skin feeling fresh and pleasantly fragrant after every wash.",
-      "<b>Gentle Daily Cleansing:</b> Cleanses the skin effectively while remaining mild enough for everyday use.",
-      "<b>Soft & Smooth Feel:</b> Helps keep skin soft, smooth, and refreshed with regular use.",
-      "<b>Suitable for Normal Skin:</b> Formulated for normal skin type, offering balanced cleansing and care.",
-      "<b>Pack of 5 for Regular Use:</b> Supplied as a value pack of five 100 g soaps, ideal for family use and long-term convenience."
+      "<b>Delicate Jasmine Bloom Fragrance:</b> Infused with a soothing jasmine aroma that uplifts your senses and leaves your skin smelling fresh after every wash.",
+      "<b>Rich & Creamy Lather:</b> Creates a smooth, creamy foam that gently cleanses dirt and impurities without stripping natural moisture from your skin.",
+      "<b>Hydrating & Nourishing:</b> Formulated to retain skin moisture, keeping your skin soft, smooth, and refreshed throughout the day.",
+      "<b>Suitable for Daily Use:</b> Mild and gentle enough for everyday bathing, making it ideal for regular family use.",
+      "<b>Value Pack of 5:</b> Comes in a convenient pack of five 105 g soaps, providing excellent value and a long-lasting supply for home use.",
     ],
     details: {
-      "Packaging Size": "100 gm × 5 (500 gm)",
-      "Purpose": "For Regular Use",
-      "Skin Type": "Normal Skin",
-      "Brand": "GLIMMER",
-      "Shelf Life": "24 months",
-      "Fragrance": "Neutral",
-      "Ideal For": "Unisex"
+      "Product": "Glimmer Jasmine Bloom Soap",
+      "Fragrance": "Jasmine Bloom",
+      "Net Quantity": "5 × 105 g",
+      "Pack Size": "Pack of 5",
+      "Usage": "Bathing & Cleansing",
+      "Skin Feel": "Hydrating & Nourishing",
+      "Suitable For": "All Skin Types",
+      "Form": "Bar Soap"
     },
-    images: ["images/product02_100gm_FreshJasmine(1).jpg", "images/product02_100gm_FreshJasmine(2).jpg"]
-  },
-  {
-    name: "Glimmer Fresh Rose Soap 100 g (pack of 5)",
-    weight: "100 gm",
-    price: 90,
-    about: [
-      "<b>Refreshing Rose Fragrance:</b> Infused with a pleasant rose scent that leaves your skin feeling fresh and fragrant after every wash.",
-      "<b>Gentle Cleansing:</b> Formulated to cleanse the skin effectively without stripping away natural moisture, making it suitable for daily use.",
-      "<b>Soft & Smooth Skin:</b> Helps maintain soft, smooth, and healthy-looking skin with regular use.",
-      "<b>Suitable for Normal Skin:</b> Designed for normal skin type, providing balanced cleansing and care.",
-      "<b>Pack of 5 for Regular Use:</b> Comes in a value pack of five 100 g soaps, ideal for family use and long-term convenience."
-    ],
-    details: {
-      "Packaging Size": "100 gm × 5 (500 gm)",
-      "Purpose": "For Regular Use",
-      "Skin Type": "Normal Skin",
-      "Brand": "GLIMMER",
-      "Shelf Life": "24 months",
-      "Fragrance": "Neutral",
-      "Ideal For": "Unisex"
-    },
-    images: ["images/product02_100gm_FreshRose(1).jpg", "images/product02_100gm_FreshRose(2).jpg"]
+    images: ["images/product02_105gm_JasmineBloom(0).jpg", "images/product02_105gm_JasmineBloom(2).jpg"]
   },
 
 // -----------------------------------------------------------------------------------------------------------------------------
@@ -175,7 +156,7 @@ const allProducts = [
   {
     name: "Home Guard 10X Power Toilet Cleaner 200 ml | 500 ml",
     weight: "200 ml | 500 ml",
-    price: 10,
+    price: [24, 90],
     about: [
       "<b>Powerful 10X Cleaning Action:</b> Formulated with a concentrated cleaning solution that effectively removes tough stains, buildup, limescale, and dirt from toilet surfaces for a deep and powerful clean.",  
       "<b>Removes Germs and Bacteria:</b> Designed to eliminate harmful germs and bacteria, ensuring a hygienic and safer toilet bowl with every use.",  
@@ -187,8 +168,9 @@ const allProducts = [
     details: {
       "Product": "Home Guard 10X Power Toilet Cleaner",
       "Pack Sizes Available": "200ml, 500ml",
-      "Net Quantity 200ml": "200 ml",
-      "Net Quantity 500ml": "500 ml",
+      "Net Quantity and price": "200 ml | ₹ 24",
+      "Net Quantity and price": "500 ml | ₹ 90",
+      "Offer" : "Buy one get one free for 500 ml",
       "Usage": "Toilet Bowl Cleaning",
       "Fragrance": "Fresh",
       "Cleans": "Tough Stains, Limescale, Dirt, Germs",
@@ -200,7 +182,7 @@ const allProducts = [
   {
     name: "Home Guard Neo Toilet Cleaner 10X Power Clean 500ml 1Buy Get 1Free",
     weight: "500 ml",
-    price: 10,
+    price: 90,
     about: [
       "<b>Powerful 10X Cleaning Formula:</b> Specially formulated to deliver deep and effective cleaning for toilet bowls by removing tough stains, limescale, dirt, and deposits.",
       "<b>Hygienic and Germ-Free:</b> Helps eliminate germs and bacteria for a cleaner and more sanitary toilet surface.",
@@ -227,7 +209,7 @@ const allProducts = [
   {
     name: "Bum Suit Baby Pants New Born (pack of 40+2)",
     weight: "New Born (NB)",
-    price: 10,
+    price: 240,
     about: [
       "<b>Comfortable Baby Pants:</b> Designed to provide a soft and comfortable fit for newborn babies, ensuring ease of movement throughout the day.",
       "<b>Soft & Gentle Material:</b> Made with skin-friendly materials that are gentle on a newborn’s delicate skin.",
@@ -250,7 +232,7 @@ const allProducts = [
   {
     name: "Bum Suit Baby Pants Small (pack of 40) | (pack of 78)",
     weight: "Small (S)",
-    price: 10,
+    price: [240, 440],
     about: [
       "<b>Premium Comfort & Fit:</b> Designed with a soft, breathable material that’s gentle on your baby’s delicate skin and ensures comfortable all-day wear.",  
       "<b>Active Leak Protection:</b> Features advanced 3D Leak Guard and elastic waistband for a snug fit that helps prevent leaks during movement and play.",  
@@ -274,9 +256,9 @@ const allProducts = [
     images: ["images/product04_S_40(1).jpg", "images/product04_S_40(2).jpg", "images/product04_S_40(3).jpg", "images/product04_S_40(4).jpg", "images/product04_S_40(5).jpg", "images/product04_S_40(6).jpg", "images/product04_S_40(7).jpg", "images/product04_S_40(8).jpg", "images/product04_S_40(9).jpg"]
   },
   {
-    name: "Bum Suit Baby Pants Medium (pack of 72)",
+    name: "Bum Suit Baby Pants Medium (pack of 32) | (pack of 72)",
     weight: "Medium (M)",
-    price: 10,
+    price: [240, 440],
     about: [
       "<b>Premium Comfort & Fit:</b> Designed with a soft, breathable material that’s gentle on your baby’s delicate skin and ensures comfortable all-day wear.",  
       "<b>Active Leak Protection:</b> Features advanced 3D Leak Guard and elastic waistband for a snug fit that helps prevent leaks during movement and play.",  
@@ -287,7 +269,7 @@ const allProducts = [
     ],
     details: {
       "Product": "Bumsuit Baby Pants Medium (M)",
-      "Pack Sizes Available": "72 Count",
+      "Pack Sizes Available": "32 Count, 72 Count",
       "Size": "Medium (M)",
       "Compatible Baby Weight": "7-12 kg",
       "Material": "Soft Breathable Fabric with Elastic Waistband",
@@ -302,7 +284,7 @@ const allProducts = [
   {
     name: "Bum Suit Baby Pants Large (pack of 30)",
     weight: "Large (L)",
-    price: 10,
+    price: 240,
     about: [
       "<b>Comfortable All-Day Wear:</b> Designed with a soft, breathable material that’s gentle on your baby’s delicate skin and provides comfortable movement throughout the day.",
       "<b>Advanced Leak Protection:</b> Features an absorbent core and elastic waistband that help prevent leaks and keep your baby dry for longer durations.",
@@ -326,7 +308,7 @@ const allProducts = [
   {
     name: "Bum Suit Baby Pants Extra Large (pack of 56)",
     weight: "Extra Large (XL)",
-    price: 10,
+    price: 440,
     about: [
       "<b>Comfortable & Breathable Design:</b> Made with soft, breathable fabric that is gentle on your baby’s delicate skin and supports comfortable movement throughout the day.",
       "<b>Advanced Leak Protection:</b> Features a highly absorbent core and elastic waistband to help prevent leaks and keep your baby dry for longer periods.",
@@ -429,7 +411,7 @@ function renderProducts(products) {
         <div class="product-info">
           <h3>${p.name}</h3>
           <p class="weight">${p.weight}</p>
-          <div class="price">₹${p.price}</div>
+          <div class="price">${Array.isArray(p.price) ? p.price.map(pr => `₹${pr}`).join(' | ') : `₹${p.price}`}</div>
         </div>
 
         <button class="details-btn" onclick="openModal(${index})">
